@@ -186,6 +186,10 @@ section .portfolio button {
   /* top: 70px; */
   transform: translate(-50%, -50%);
 }
+section .portfolio button a {
+  color: var(--main-color);
+  text-decoration: none;
+}
 section .portfolio button:hover {
   border-color: #ebc6c6a5;
 }
@@ -265,13 +269,14 @@ section .col .my-image::before {
     display: none;
   }
 }
+
 /* Iphone XR Screen */
 @media (max-width: 683px) {
   section .cv-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     grid-gap: 10px;
-    /* margin-top: 50px; */
+    margin-top: 50px;
     text-align: center;
   }
   section .cv-content .srv {
@@ -305,11 +310,19 @@ article .container .feat {
 }
 @media (max-width: 325px) {
   article .container .feat {
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  }
+}
+/* Iphone 12 Pro */
+/* @media (max-width: 683px) {
+  article .container .feat {
     padding: 10px !important;
     text-align: center !important;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)) !important;
   }
-}
+} */
 article .container .feat .content {
   padding: 20px;
   text-align: center;
