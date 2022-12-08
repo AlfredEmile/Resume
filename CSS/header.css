@@ -1,0 +1,81 @@
+/* Start Header */
+
+header {
+  padding: 15px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Logo */
+
+.logo img {
+  width: 50px;
+}
+header h3 {
+  margin: 0px;
+  max-width: 100%;
+}
+header h3 span {
+  color: var(--main-color);
+}
+/* Header Links*/
+header .links {
+  position: relative;
+}
+header .links:hover {
+  color: var(--main-color);
+  transition: 0.3s;
+}
+/* Bar contain links */
+header .links .fa-solid.fa-bars-staggered {
+  /* position: absolute; */
+  right: 0;
+  padding: 0;
+  margin: 0;
+}
+
+header .links ul {
+  text-decoration: none;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 130px;
+  top: calc(100% + 5px);
+  background-color: lightgrey;
+  display: none;
+  border-radius: 10px;
+  z-index: 2;
+}
+header .links ul::before {
+  content: "";
+  border-style: solid;
+  border-width: 6px;
+  border-color: transparent transparent lightgrey transparent;
+  position: absolute;
+  right: 5px;
+  top: -11px;
+}
+header .links:hover ul {
+  display: block;
+  transition: 0.3s;
+}
+header .links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+header .links ul li a:hover {
+  size: large;
+  color: #333;
+  transition: 0.3s;
+  padding-left: 25px;
+}
+/* Border under links except the last one */
+header .links ul li:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+/* End Header */

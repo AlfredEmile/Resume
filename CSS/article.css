@@ -1,0 +1,51 @@
+/* Start Articale */
+article {
+  padding: 0 0 30px 0;
+  margin: 0;
+  background-color: #f6f6f6;
+}
+article .container .feat {
+  display: grid;
+  /* hnwaza3 el colomns 3ala 7asab el 3adad el odamo bel"auto-fill" w a2al wa7ed 300px mynfa3sh y2l w el 1fr law 3andymsa7a mota7a 
+    aktar men 300px ymlaha   */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+@media (max-width: 325px) {
+  article .container .feat {
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  }
+}
+/* Iphone 12 Pro */
+/* @media (max-width: 683px) {
+    article .container .feat {
+      padding: 10px !important;
+      text-align: center !important;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)) !important;
+    }
+  } */
+article .container .feat .content {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+article .container .feat i {
+  color: var(--main-color);
+  font-size: xx-large;
+}
+/* Samsung Galaxy Fold Screen */
+
+article .container .feat h3 {
+  font-weight: 800;
+  margin: 30px 0;
+  text-transform: capitalize;
+}
+article .container .feat p {
+  line-height: 1.6;
+  color: #777;
+  text-transform: capitalize;
+}
+
+/* End Articale  */
