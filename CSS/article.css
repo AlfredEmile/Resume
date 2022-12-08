@@ -51,7 +51,7 @@ article .container .feat p {
 /* End Articale  */
 
 /* Start Contact US  */
-article .form {
+/* article .form {
   display: flex;
 }
 article .form .email-pass {
@@ -60,5 +60,5 @@ article .form .email-pass {
 }
 article aside .textarea {
   justify-content: flex-end;
-}
+} */
 /* End Contact US  */
