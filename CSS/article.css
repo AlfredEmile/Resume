@@ -49,3 +49,16 @@ article .container .feat p {
 }
 
 /* End Articale  */
+
+/* Start Contact US  */
+article .form {
+  display: flex;
+}
+article .form .email-pass {
+  display: grid;
+  margin: 20px;
+}
+article aside .textarea {
+  justify-content: flex-end;
+}
+/* End Contact US  */
